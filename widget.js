@@ -4,9 +4,9 @@
 
 // 目印のaタグからパラメータとってきたら消す
 var atag = document.getElementById('insta_widget');
-var image_url = atag[0].dataset.imageUrl;
-var post_url = atag[0].dataset.postUrl;
-atag[0].style.display = 'none';
+var image_url = atag.dataset.imageUrl;
+var post_url = atag.dataset.postUrl;
+atag.style.display = 'none';
 
 var iframe = document.createElement('iframe');
 iframe.scrolling = 'no';
@@ -20,7 +20,7 @@ iframe.height = '100%';
 iframe.id = 'gh-contributions-widget';
 
 // atagの隣にiframeを挿入
-atag[0].parentNode.insertBefore(iframe,atag[0]);
+atag.parentNode.insertBefore(iframe,atag);
 
 // widgetの中身（ここに後で中身を書いていきます）
 var widget = '<div class="insta_box">';
