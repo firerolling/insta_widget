@@ -28,6 +28,7 @@ widget += '<img src="'+image_url+'" alt="" />';
 widget += '<a href="'+post_url+'" target="_blank">See on instagram</a>';
 widget += '</div>';
 widget += (function(){/*
+<style>
 div.insta_box {
 width:200px;
 height:300px;
@@ -37,6 +38,7 @@ padding: 10px;
 div.insta_box img {
 width: 190px;
 }
+</style>
 */}).toString().replace(/(\n)/g, '').split('/*')[1].split('*/')[0];
 
 
