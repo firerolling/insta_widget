@@ -3,7 +3,7 @@
 'use strict';
 
 // 目印のaタグからパラメータとってきたら消す
-var atag = document.getElementsByClassName('insta_widget');
+var atag = document.getElementById('insta_widget');
 var image_url = atag[0].dataset.imageUrl;
 var post_url = atag[0].dataset.postUrl;
 atag[0].style.display = 'none';
