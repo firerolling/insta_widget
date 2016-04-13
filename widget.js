@@ -4,6 +4,7 @@
 
 // 目印のaタグからパラメータとってきたら消す
 var atag = document.getElementById('insta_widget');
+var username = atag.dataset.username;
 var image_url = atag.dataset.imageUrl;
 var post_url = atag.dataset.postUrl;
 atag.style.display = 'none';
@@ -24,6 +25,7 @@ atag.parentNode.insertBefore(iframe,atag);
 
 // widgetの中身（ここに後で中身を書いていきます）
 var widget = '<div class="insta_box">';
+widget += '<span>'+username+'</span>';
 widget += '<img src="'+image_url+'" alt="" />';
 widget += '<a href="'+post_url+'" target="_blank">See on instagram</a>';
 widget += '</div>';
