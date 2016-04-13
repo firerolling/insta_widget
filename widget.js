@@ -33,6 +33,9 @@ div.insta_box {
 width:200px;
 height:300px;
 padding: 10px;
+background-color: white;
+border: 1px solid #edeeee;
+border-radius: 3px;
 }
 
 div.insta_box img {
