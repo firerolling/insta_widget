@@ -39,7 +39,7 @@ border-radius: 3px;
 }
 
 div.insta_box img {
-width: 190px;
+width:100%;
 }
 </style>
 */}).toString().replace(/(\n)/g, '').split('/*')[1].split('*/')[0];
